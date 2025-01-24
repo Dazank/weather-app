@@ -10,7 +10,7 @@ const date = document.querySelector('.date')
 const time = document.querySelector('.time')
 const timeDisplay = document.querySelector('.time_display')
 
-const citySearchURL = 'http://dataservice.accuweather.com/locations/v1/cities/search';
+const citySearchURL = 'https://dataservice.accuweather.com/locations/v1/cities/search';
 const APIKey = 'ZBNRGeGPoVhZ7zIn0lwIpQ9O04nY7WtO';
 
 const citySearchRequest = async (city) =>{
@@ -20,7 +20,7 @@ return citySearchData
 
 }
 
-const currentConditionsURL = 'http://dataservice.accuweather.com/currentconditions/v1/'
+const currentConditionsURL = 'https://dataservice.accuweather.com/currentconditions/v1/'
 const cityConditionsRequest = async (cityKey)=>{
 let cityConditions = await fetch(currentConditionsURL + cityKey + `?apikey=${APIKey}` + '&details=true'  )
 let conditionData = await cityConditions.json()
