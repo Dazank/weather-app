@@ -75,8 +75,8 @@ if(temperatureValue != null){
 weatherText.innerText = weatherStatus
 time.innerText = currentTime
 date.innerText = `${day}  ${month}  ${year}`
-isDay ? timeDisplay.style.backgroundImage = `url(./images/day.jpg)` 
-: timeDisplay.style.backgroundImage = `url(./images/night.jpg)`
+isDay ? timeDisplay.style.backgroundImage = `url(./images/day.webp)` 
+: timeDisplay.style.backgroundImage = `url(./images/night.webp)`
 
 timeDisplay.classList.remove('hidden')
 })
